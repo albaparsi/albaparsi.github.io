@@ -3,40 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-
-  <!-- Link to external CSS file -->
+  <title>Alba Samsami | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1 class="logo">Alba Samsami</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Technical Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Main heading -->
-  <h1>Hello, I'm Alba</h1>
-  <p>Welcome to my portfolio site.</p>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Hello, I'm Alba 👋</h2>
+    <p>Aspiring AI Engineer | Passionate about Edge AI, NLP, and Healthcare Applications</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
 
-  <!-- About Me section -->
-  <h2>About Me</h2>
-  <p>
-    I’m a computer science student passionate about AI and LLMs.
-    I enjoy building useful and creative solutions.
-  </p>
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a computer science student passionate about AI, large language models, and
+      applying technology to solve real-world problems. I enjoy building innovative projects,
+      pitching ideas, and collaborating in entrepreneurial and technical communities.
+    </p>
+  </section>
 
-  <!-- Projects section -->
-  <h2>My Projects</h2>
-  <ul>
-    <li>
-      <a href="https://github.com/albaparsi/CustomGPTModel">CustomGPTModel</a> – Short description of the project.
-    </li>
-    <li>
-      <a href="https://github.com/albaparsi/NLPTextClassification">NLPTextClassification</a> – Short description of the project.
-    </li>
-    <!-- Add more projects as needed -->
-  </ul>
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Startup Weekend, Cincinnati (Jan 2025)</strong> – Third Place Winner with Edge AI Accelerator pitch.</li>
+      <li><strong>Entrepreneurship Challenge (Nov 2024)</strong> – Presented Fit-Plant to local entrepreneurs.</li>
+      <li><strong>Revolution UC Hackathon (Feb 2024)</strong> – Developed Chest X-ray Analysis Program with TensorFlow + Streamlit.</li>
+    </ul>
+  </section>
 
-  <!-- Resume link -->
-  <p>
-    <a href="AlbaSamsamiResume_.pdf" download>Download My Resume</a>
-  </p>
+  <!-- Technical Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul class="skills-list">
+      <li>Programming: Python, JavaScript, C++</li>
+      <li>Frameworks & Tools: PyTorch, TensorFlow, React, Tailwind CSS</li>
+      <li>AI/ML: NLP, Transformers, Deep Learning, CNNs</li>
+      <li>Version Control: Git, GitHub</li>
+    </ul>
+  </section>
 
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>University of Cincinnati</strong> – B.S. in Computer Science (Expected Graduation: 2026)</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>Edge AI Accelerator, Startup Weekend | Third Place Winner</h3>
+      <p><em>Jan 2025</em></p>
+      <ul>
+        <li>Developed and pitched a flexible Edge AI accelerator architecture.</li>
+        <li>Created a pitch deck showcasing market potential and technical feasibility.</li>
+        <li>Earned 3rd place among multiple competing teams.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Fit-Plant</h3>
+      <p><em>Sep 2024 – Nov 2024</em></p>
+      <ul>
+        <li>Built a digital soil meter with ESP32 sensors for NPK, light, and moisture.</li>
+        <li>Developed a web app (Python + React + Tailwind) for real-time data analysis.</li>
+        <li>Presented to entrepreneurs as part of an innovation challenge.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Custom GPT Language Model</h3>
+      <p><em>Jul 2024 – Aug 2024</em></p>
+      <ul>
+        <li>Developed a GPT-inspired model from scratch using PyTorch.</li>
+        <li>Implemented transformers with multi-head self-attention.</li>
+        <li>Optimized training via memory mapping and dynamic batching.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>NLP Text Classification</h3>
+      <p><em>Jun 2024</em></p>
+      <ul>
+        <li>Built a sarcasm detection model with TensorFlow/Keras.</li>
+        <li>Designed deep learning architecture with embeddings and dense layers.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Chest X-ray Analysis Program, Revolution UC</h3>
+      <p><em>Feb 2024</em></p>
+      <ul>
+        <li>Trained CNN on 5,000+ X-ray images with TensorFlow achieving high accuracy.</li>
+        <li>Deployed an interactive interface with Streamlit for clinicians.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Alba Samsami | Built with 💻 and ☕</p>
+  </footer>
 </body>
 </html>
