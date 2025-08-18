@@ -1,4 +1,6 @@
-/* Global Reset */
+/* =======================================
+   1. Reset & Base Styles
+======================================= */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,31 @@ body {
   color: #fff;
 }
 
-/* Navbar */
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #6e40c9;
+}
+
+/* Accent Colors */
+:root {
+  --purple: #6e40c9;
+  --yellow: #ffe600;
+  --dark: #1a1a1a;
+  --light: #ddd;
+}
+
+/* =======================================
+   2. Navbar
+======================================= */
 header {
   background: #111;
   padding: 15px 0;
@@ -31,7 +57,7 @@ nav {
 
 .logo {
   font-size: 1.5rem;
-  color: #6e40c9;
+  color: var(--purple);
   font-weight: bold;
 }
 
@@ -45,38 +71,33 @@ nav {
 }
 
 .nav-links a {
-  text-decoration: none;
   color: #fff;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #6e40c9;
 }
 
 .btn-nav {
   padding: 8px 15px;
-  background: #6e40c9;
+  background: var(--purple);
   border-radius: 5px;
-  text-decoration: none;
   color: #fff;
-  transition: 0.3s;
 }
 
 .btn-nav:hover {
   background: #fff;
-  color: #6e40c9;
+  color: var(--purple);
 }
 
-/* Hero Section */
+/* =======================================
+   3. Hero Section
+======================================= */
 #hero {
   height: 100vh;
-  background: linear-gradient(135deg, #6e40c9, #000);
+  background: linear-gradient(135deg, var(--purple), #000);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
+  padding: 0 20px;
 }
 
 #hero h2 {
@@ -84,7 +105,7 @@ nav {
 }
 
 #hero h2 span {
-  color: #ffe600;
+  color: var(--yellow);
 }
 
 #hero h3 {
@@ -96,20 +117,20 @@ nav {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: #ffe600;
+  background: var(--yellow);
   color: #000;
   font-weight: bold;
   border-radius: 25px;
-  text-decoration: none;
-  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #6e40c9;
+  background: var(--purple);
   color: #fff;
 }
 
-/* Sections */
+/* =======================================
+   4. Sections General
+======================================= */
 section {
   max-width: 1000px;
   margin: 60px auto;
@@ -120,18 +141,30 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #ffe600;
+  color: var(--yellow);
 }
 
-/* Skills */
+/* =======================================
+   5. About Section
+======================================= */
+#about p {
+  max-width: 800px;
+  margin: auto;
+  color: var(--light);
+}
+
+/* =======================================
+   6. Skills Section
+======================================= */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
+  margin-top: 20px;
 }
 
 .skill-card {
-  background: #1a1a1a;
+  background: var(--dark);
   padding: 20px;
   border-radius: 10px;
   font-weight: bold;
@@ -139,11 +172,41 @@ section h2 {
 }
 
 .skill-card:hover {
-  background: #6e40c9;
+  background: var(--purple);
   color: #fff;
 }
 
-/* Projects */
+/* =======================================
+   7. Experience Section
+======================================= */
+.experience-card {
+  background: var(--dark);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.experience-card h3 {
+  color: var(--purple);
+  margin-bottom: 5px;
+}
+
+.experience-card p {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.experience-card ul {
+  margin-left: 20px;
+  color: var(--light);
+}
+
+/* =======================================
+   8. Projects Section
+======================================= */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -151,32 +214,63 @@ section h2 {
 }
 
 .project-card {
-  background: #1a1a1a;
+  background: var(--dark);
   padding: 20px;
   border-radius: 10px;
   text-align: left;
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project-card h3 {
+  color: var(--yellow);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  background: #6e40c9;
+  background: var(--purple);
+  color: #fff;
 }
 
-/* Contact */
+/* =======================================
+   9. Contact Section
+======================================= */
 #contact a {
-  color: #ffe600;
-  text-decoration: none;
+  color: var(--yellow);
 }
 
 #contact a:hover {
   color: #fff;
 }
 
-/* Footer */
+/* =======================================
+   10. Footer
+======================================= */
 footer {
   background: #111;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  color: var(--light);
+}
+
+/* =======================================
+   11. Responsive Design
+======================================= */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+  }
+
+  #hero h3 {
+    font-size: 1.2rem;
+  }
 }
