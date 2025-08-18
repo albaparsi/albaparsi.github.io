@@ -7,115 +7,102 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Navbar -->
   <header>
     <nav>
       <h1 class="logo">Alba Samsami</h1>
       <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Technical Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
       </ul>
+      <a href="#contact" class="btn-nav">Contact</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section id="hero">
-    <h2>Hello, I'm Alba 👋</h2>
-    <p>Aspiring AI Engineer | Passionate about Edge AI, NLP, and Healthcare Applications</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Alba Samsami</span></h2>
+      <h3>Aspiring AI Engineer</h3>
+      <p>Specializing in NLP, Edge AI, and AI for Healthcare</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
   </section>
 
-  <!-- About Me -->
+  <!-- About -->
   <section id="about">
-    <h2>About Me</h2>
+    <h2>Who Am I?</h2>
     <p>
-      I am a computer science student passionate about AI, large language models, and
-      applying technology to solve real-world problems. I enjoy building innovative projects,
-      pitching ideas, and collaborating in entrepreneurial and technical communities.
+      I am a computer science student passionate about artificial intelligence, 
+      large language models, and developing impactful projects. I enjoy blending 
+      innovation with entrepreneurship and have competed in hackathons and startup challenges.
     </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">PyTorch</div>
+      <div class="skill-card">TensorFlow</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Tailwind CSS</div>
+      <div class="skill-card">Git/GitHub</div>
+    </div>
   </section>
 
   <!-- Experience -->
   <section id="experience">
     <h2>Experience</h2>
     <ul>
-      <li><strong>Startup Weekend, Cincinnati (Jan 2025)</strong> – Third Place Winner with Edge AI Accelerator pitch.</li>
-      <li><strong>Entrepreneurship Challenge (Nov 2024)</strong> – Presented Fit-Plant to local entrepreneurs.</li>
-      <li><strong>Revolution UC Hackathon (Feb 2024)</strong> – Developed Chest X-ray Analysis Program with TensorFlow + Streamlit.</li>
-    </ul>
-  </section>
-
-  <!-- Technical Skills -->
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul class="skills-list">
-      <li>Programming: Python, JavaScript, C++</li>
-      <li>Frameworks & Tools: PyTorch, TensorFlow, React, Tailwind CSS</li>
-      <li>AI/ML: NLP, Transformers, Deep Learning, CNNs</li>
-      <li>Version Control: Git, GitHub</li>
+      <li><strong>Startup Weekend (2025)</strong> – Edge AI Accelerator, 3rd Place Winner.</li>
+      <li><strong>Entrepreneurship Challenge (2024)</strong> – Fit-Plant digital soil sensor + app.</li>
+      <li><strong>Revolution UC (2024)</strong> – Chest X-ray AI model with Streamlit UI.</li>
     </ul>
   </section>
 
   <!-- Education -->
   <section id="education">
     <h2>Education</h2>
-    <p><strong>University of Cincinnati</strong> – B.S. in Computer Science (Expected Graduation: 2026)</p>
+    <p><strong>University of Cincinnati</strong> – B.S. in Computer Science (Expected 2026)</p>
   </section>
 
   <!-- Projects -->
   <section id="projects">
-    <h2>My Projects</h2>
-
-    <div class="project">
-      <h3>Edge AI Accelerator, Startup Weekend | Third Place Winner</h3>
-      <p><em>Jan 2025</em></p>
-      <ul>
-        <li>Developed and pitched a flexible Edge AI accelerator architecture.</li>
-        <li>Created a pitch deck showcasing market potential and technical feasibility.</li>
-        <li>Earned 3rd place among multiple competing teams.</li>
-      </ul>
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Edge AI Accelerator</h3>
+        <p>Flexible AI accelerator architecture optimized for local inference. 🥉 Startup Weekend Winner.</p>
+      </div>
+      <div class="project-card">
+        <h3>Fit-Plant</h3>
+        <p>Smart soil sensor with ESP32 + web dashboard (Python, React, Tailwind).</p>
+      </div>
+      <div class="project-card">
+        <h3>Custom GPT Model</h3>
+        <p>Built GPT-inspired LLM with PyTorch and transformer architecture.</p>
+      </div>
+      <div class="project-card">
+        <h3>NLP Text Classification</h3>
+        <p>Sarcasm detection using TensorFlow/Keras with embeddings + dense layers.</p>
+      </div>
+      <div class="project-card">
+        <h3>Chest X-ray Analysis</h3>
+        <p>CNN model trained on 5k+ X-rays with Streamlit clinician interface.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="project">
-      <h3>Fit-Plant</h3>
-      <p><em>Sep 2024 – Nov 2024</em></p>
-      <ul>
-        <li>Built a digital soil meter with ESP32 sensors for NPK, light, and moisture.</li>
-        <li>Developed a web app (Python + React + Tailwind) for real-time data analysis.</li>
-        <li>Presented to entrepreneurs as part of an innovation challenge.</li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <h3>Custom GPT Language Model</h3>
-      <p><em>Jul 2024 – Aug 2024</em></p>
-      <ul>
-        <li>Developed a GPT-inspired model from scratch using PyTorch.</li>
-        <li>Implemented transformers with multi-head self-attention.</li>
-        <li>Optimized training via memory mapping and dynamic batching.</li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <h3>NLP Text Classification</h3>
-      <p><em>Jun 2024</em></p>
-      <ul>
-        <li>Built a sarcasm detection model with TensorFlow/Keras.</li>
-        <li>Designed deep learning architecture with embeddings and dense layers.</li>
-      </ul>
-    </div>
-
-    <div class="project">
-      <h3>Chest X-ray Analysis Program, Revolution UC</h3>
-      <p><em>Feb 2024</em></p>
-      <ul>
-        <li>Trained CNN on 5,000+ X-ray images with TensorFlow achieving high accuracy.</li>
-        <li>Deployed an interactive interface with Streamlit for clinicians.</li>
-      </ul>
-    </div>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:alba@example.com">alba@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/albasamsami">github.com/albasamsami</a></p>
   </section>
 
   <!-- Footer -->
