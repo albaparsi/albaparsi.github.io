@@ -245,6 +245,17 @@ section h2 {
   color: #fff;
 }
 
+/* Non-clickable 'coming soon' project style */
+.project-card.coming-soon {
+  opacity: 0.8;
+  cursor: default;
+}
+
+.project-card.coming-soon:hover {
+  transform: none;
+  background: var(--dark);
+}
+
 /* =======================================
    9. Contact Section
 ======================================= */
