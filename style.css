@@ -213,6 +213,11 @@ section h2 {
   gap: 20px;
 }
 
+/* ensure grid items stretch so cards line up */
+.project-grid {
+  align-items: stretch;
+}
+
 .project-link {
   text-decoration: none;
   color: inherit;
@@ -229,6 +234,11 @@ section h2 {
   text-align: left;
   transition: transform 0.3s, background 0.3s;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* consistent card size across grid — adjusts on small screens */
+  min-height: 180px;
 }
 
 .project-card h3 {
@@ -297,5 +307,12 @@ footer {
 
   #hero h3 {
     font-size: 1.2rem;
+  }
+}
+
+/* Increase project card height on wider screens for a more balanced grid */
+@media (min-width: 769px) {
+  .project-card {
+    min-height: 220px;
   }
 }
