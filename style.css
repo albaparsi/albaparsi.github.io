@@ -236,7 +236,8 @@ section h2 {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* keep title and description together at top */
+  gap: 10px; /* small spacing between title and description */
   /* consistent card size across grid — adjusts on small screens */
   min-height: 180px;
 }
